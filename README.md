@@ -5,7 +5,7 @@ Terraform module for deploying [external-secrets](https://github.com/external-se
 
 ```hcl
 module "external_secrets" {
-  source = "easy-modules/external-secrets/easy"
+  source = "git::https://github.com/AlphaEzops/terraform-external_secrets.git?ref=v1.0.0"
   enabled = true
   cluster_name                     = "eks-prod-42"
   chart_name                       = "external-secrets"
